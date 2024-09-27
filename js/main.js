@@ -1,18 +1,8 @@
-//alert("Hola desde main.js")
-console.error("error");
+let nombreProducto ="Pizza muzzarella" ;
+let precioUnitario = 8500 ;
 
-let X = 10 ;
-const Y = 5 ;
+function mostrarPrompt() {
+    let cantidadDeseada = prompt("¿Cuantas desea comprar?")
+    alert (cantidadDeseada*precioUnitario) ;
+}
 
-let nombre ="Ramiro" ;
-let edad = 31 ;
-
-X = 15 ;
-
-console.log(X+Y);
-console.log("Tu nombre es: " + nombre + "y tu edad es: " + edad);
-console.log(`Tu nombre es: ${nombre} y tu edad es: ${edad}`);
-
-const NU = prompt(`ingrese su nombre:`);
-
-console.log(NU);
