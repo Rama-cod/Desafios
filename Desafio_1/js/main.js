@@ -3,6 +3,7 @@ let precioUnitario = 8500;
 
 function mostrarPrompt() {
     let cantidadDeseada = prompt("¿Cuantas desea comprar?");
-    alert (cantidadDeseada*precioUnitario);
-};
+    let resultado = cantidadDeseada * precioUnitario;
+        alert(`El precio a pagar por la cantidad de ${cantidadDeseada} es de $${resultado}`);
+    }
 
