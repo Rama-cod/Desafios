@@ -69,6 +69,7 @@
         cantidadDeseada = prompt("¿Cuantas desea comprar?");
         cantidadDeseada = parseInt(cantidadDeseada);
         sumarProductos (precioUnitario, cantidadDeseada)
+        actualizarStock ()
         }
         
         const productos = ["Producto1","Producto2","Producto3","Producto4","Producto5"]
@@ -77,12 +78,24 @@
             console.log("Producto " + (i + 1) + ":" + productos[i]);
         }
         
-        let productoVendido = productos.pop()
+        let actualizarStock = () => {
+        let productoVendido = productos.splice (0, cantidadDeseada)
+        console.log("Se vendio " + cantidadDeseada + " producto/s")
         console.log(productos.length)
-        console.log("Se vendio" + productoVendido)
-        
-        
-        
+    }
+    
+    const pizza = {
+        Nombre: "Muzzarella",
+        Precio: 8500,
+        Stock: 35, 
+    }
+    
+    pizza.Nombre = "Cuatro quesos"
+    pizza.categoria = "Individual"
+    
+    delete pizza.Stock
+    console.log (pizza)
+    
     </script>
 </body>
 </html>
